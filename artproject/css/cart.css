@@ -1,0 +1,139 @@
+#main{
+    margin-top: 50px;
+}
+#cart
+{
+    border: 1px solid #E5E5E5;
+    border-collapse: collapse;
+    width: 1200px;
+    text-align: center;
+}
+#cart td,#cart th,#cart tr{
+    border: 1px solid #E5E5E5;
+    font-weight: bold;
+    color: #666;
+}
+#cart>thead>tr>th{
+    font-size: 15px;
+}
+#cart th{
+    width: 150px;
+    height: 60px;
+}
+#cart thead input{
+    vertical-align: middle;
+}
+#cart tbody input[type='checkbox']{
+    float:left;
+    margin-right: 10px;
+}
+#cart tbody div{
+    border:1px solid #f1f1f1;
+    padding:5px;
+    float:left;
+    width:90px;
+    height:80px;
+    text-align: center;
+}
+#cart tbody img {
+    width:90%;
+}
+#cart a
+{
+    text-decoration:none;
+    color:#666;
+}
+#cart a:hover
+{
+    color:#E4393C;
+}
+#cart tbody td span{
+    font-weight: bold;
+}
+
+#cart tbody td input[type='text']{
+    border:1px solid #CACBCB;
+    border-left:0;
+    border-right:0;
+    height:20px;
+    width:40px;
+    padding:0;
+    text-align: center;
+}
+#cart tbody td button{
+    border:1px solid #CACBCB;
+    height:20px;
+    width:20px;
+    padding:0;
+    background-color: #fff;
+    box-sizing:content-box;
+}
+#cart_footer{
+    position: fixed;
+    width:100%;
+    height:80px;
+    bottom:0px;
+    left:0px;
+    background-color: #fff;
+    box-shadow: 0 -1px 8px rgba(0,1,1,.08);
+    z-inxe:10000;
+}
+#cart_footer>div{
+    text-align: right;
+    margin:10px auto;
+    width:800px;
+    height:52px;
+    line-height: 52px;
+}
+#cart_footer>div>span{
+    font-size: 16px;
+    color: #e4393c;
+    font-weight: 700;
+}
+#cart_footer>div>button{
+    display: inline-block;
+    width: 96px;
+    height: 52px;
+    overflow: hidden;
+    background-color:#FDAE00;
+    border:0;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "microsoft yahei";
+    margin-left:20px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*transition���ɣ�ĳ����ʽ���ԣ���ֵ����һ��ʱ���ڻ����仯*/
+#cart tbody img{
+    transition: transform 0.5s linear;
+}
+
+/*transform��ת�������Σ��Ŵ��ƶ�����ת��skew��*/
+#cart tbody img:hover{
+    transform:scale(1.1);
+    /*transform:rotate(45deg);*/
+}
+
+#cart:hover::before{
+    transition: left 3s;
+    left: 1360px;
+}
+#cart:before{
+    /*border:1px solid red;*/
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 400px;
+    top: 180px;
+    left: -150px;
+    overflow: hidden;
+    background-image: linear-gradient(to right,rgba(255,255,255,0.2) 0,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0.2) 100%);
+    transform: skewX(-25deg);
+}

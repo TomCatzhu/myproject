@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> 用户中心 — 京东商城 </title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="css/comment.css">
+  <link rel="stylesheet" href="css/usercenter.css">
+</head>
+
+<body>
+<div id="header"></div>
+<div id="main">
+  <!--左侧附加导航 jd.css-->
+  <div class="affix">
+    <h4>用户中心</h4>
+    <ul>
+      <li class="active"><a href="#my-order">我的订单</a></li>
+      <li><a href="#buy-stat-canvas">消费统计(Canvas版)</a></li>
+      <li><a href="#buy-stat-svg">消费统计(SVG版)</a></li>
+      <li><a href="#luck-lottery">幸运抽奖</a></li>
+    </ul>
+  </div>
+  <!--右侧的主体内容-->
+  <div class="right">
+    <div id="my-order" class="active">
+      <table id="table-order">
+        <thead>
+        <tr>
+          <th>订单信息</th>
+          <th>收货人</th>
+          <th>订单金额</th>
+          <th>
+            <select  id="ot">
+              <option value="m1">最近一个月</option>
+              <option value="m3">最近三个月</option>
+              <option value="m6">最近半年</option>
+              <option value="m12">最近一年</option>
+            </select>
+          </th>
+          <th>
+            <select  id="st">
+              <option value="1">等待付款</option>
+              <option value="2">配货中</option>
+              <option value="3">运输中</option>
+              <option value="4">派货中</option>
+              <option value="5">订单完成</option>
+            </select>
+          </th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--<tr>-->
+          <!--<td colspan="6">订单编号：81308005</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td>-->
+            <!--<img src="img/prod1.jpg" />-->
+            <!--<img src="img/prod2.jpg" />-->
+            <!--<img src="img/prod3.jpg" />-->
+          <!--</td>-->
+          <!--<td>笑笑爸</td>-->
+          <!--<td>￥500 <br/>在线支付</td>-->
+          <!--<td>2017-10-11 <br/>10:22:30</td>-->
+          <!--<td>派货中</td>-->
+          <!--<td>-->
+            <!--<a href="">查看</a>-->
+            <!--<a href="">评价</a> <br/>-->
+            <!--<a href="">晒单</a>-->
+            <!--<a href="">再买</a>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td colspan="6">订单编号：81308005</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td>-->
+            <!--<img src="img/prod1.jpg" />-->
+            <!--<img src="img/prod2.jpg" />-->
+            <!--<img src="img/prod3.jpg" />-->
+          <!--</td>-->
+          <!--<td>笑笑爸</td>-->
+          <!--<td>￥500 <br/>在线支付</td>-->
+          <!--<td>2017-10-11 <br/>10:22:30</td>-->
+          <!--<td>派货中</td>-->
+          <!--<td>-->
+            <!--<a href="">查看</a>-->
+            <!--<a href="">评价</a> <br/>-->
+            <!--<a href="">晒单</a>-->
+            <!--<a href="">再买</a>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td colspan="6">订单编号：81308005</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td>-->
+            <!--<img src="img/prod1.jpg" />-->
+            <!--<img src="img/prod2.jpg" />-->
+            <!--<img src="img/prod3.jpg" />-->
+          <!--</td>-->
+          <!--<td>笑笑爸</td>-->
+          <!--<td>￥500 <br/>在线支付</td>-->
+          <!--<td>2017-10-11 <br/>10:22:30</td>-->
+          <!--<td>派货中</td>-->
+          <!--<td>-->
+            <!--<a href="">查看</a>-->
+            <!--<a href="">评价</a> <br/>-->
+            <!--<a href="">晒单</a>-->
+            <!--<a href="">再买</a>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td colspan="6">订单编号：81308005</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<td>-->
+            <!--<img src="img/prod1.jpg" />-->
+            <!--<img src="img/prod2.jpg" />-->
+            <!--<img src="img/prod3.jpg" />-->
+          <!--</td>-->
+          <!--<td>笑笑爸</td>-->
+          <!--<td>￥500 <br/>在线支付</td>-->
+          <!--<td>2017-10-11 <br/>10:22:30</td>-->
+          <!--<td>派货中</td>-->
+          <!--<td>-->
+            <!--<a href="">查看</a>-->
+            <!--<a href="">评价</a> <br/>-->
+            <!--<a href="">晒单</a>-->
+            <!--<a href="">再买</a>-->
+          <!--</td>-->
+        <!--</tr>-->
+        </tbody>
+      </table>
+      <!--分页条-->
+      <ul class="pager">
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="active"><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+      </ul>
+    </div>
+    <div id="buy-stat-canvas">
+      <canvas id="c1" width="600" height="400"></canvas>
+    </div>
+    <div id="buy-stat-svg">消费统计(SVG)</div>
+    <div id="luck-lottery">
+      <button disabled id="bt-lottery">
+        抽奖信息加载中
+      </button>
+      <canvas id="canvas-lottery"></canvas>
+    </div>
+  </div>
+</div>
+
+
+<div id="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/fusioncharts.js"></script>
+<script src="js/fusioncharts.charts.js"></script>
+<script src="js/usercenter.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/usercenterTwo.js"></script>
+
+
+</body>
+</html>

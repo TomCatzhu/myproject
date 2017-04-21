@@ -1,0 +1,31 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<ion-content class="has-header has-footer">
+  <div class="list list-inset " ng-hide="result">
+    <label class="item item-input item-floating-label">
+      <span class="input-label">联系人</span>
+      <input type="text" placeholder="输入用户名" ng-model="order.user_name"/>
+    </label>
+    <label class="item item-input">
+      <span class="input-label">选择性别</span>
+    </label>
+    <ion-list>
+      <ion-radio value="1" ng-model="order.sex">男</ion-radio>
+      <ion-radio value="2" ng-model="order.sex">女</ion-radio>
+    </ion-list>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">请输入手机号</span>
+      <input type="text" placeholder="手机号" ng-model="order.phone"/>
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">送餐地址：</span>
+      <input type="text" placeholder="输入送餐地址" ng-model="order.addr"/>
+    </label>
+    <button class="button button-block button-balanced"   ng-click="submitOrder()">确定下单</button>
+  </div>
+  <div class="card" ng-show="result">
+    <div class="item">
+      {{result}}
+    </div>
+  </div>
+</ion-content>
+<!--<div ng-include="'tpl/include/footer.html'"></div>-->

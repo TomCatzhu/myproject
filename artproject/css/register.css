@@ -1,0 +1,156 @@
+/*通用属性*/
+* {
+  box-sizing: border-box;
+}
+body{
+  font:12px "微软雅黑",Arial,Helvetica,sans-serif;
+  color:#252525;
+  margin:0;
+  padding: 0;
+
+}
+a{
+  color:#666;
+  text-decoration: none;
+}
+a:hover{
+  color: #ff0700;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+img{
+  vertical-align: middle;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body{
+  height:1000px;
+
+  background-size:100%;
+  overflow-y: scroll;
+
+}
+#mask{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(51,51,51,.5);
+
+}
+#mask div.userlogin{
+  width:480px;
+  height:430px;
+  background:#fff;
+  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin:0 auto;
+  margin-top:5%;
+}
+
+div.userlogin>p {
+  position:relative;
+  top:-35px;
+  left:6px;
+}
+div.userlogin>p>a{
+  font-size:16px;
+  color:#fff;
+}
+.myimg{
+  text-align:center;
+  margin-bottom:23px;
+}
+.box>div{
+  text-align: center;
+  font-size: 18px;
+
+}
+.box>div>p span{
+	color:#aaa;
+	padding-left:10px;
+}
+#bt-submit{
+  border: 0;
+  width: 294px;
+  height: 24px;
+  background:#5CB85C;
+  text-align: center;
+  border-radius: 5px;
+  margin: 18px 0 0 40px;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.form-group{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.form-group label{
+
+	font-size:17px;
+
+
+}
+.form-control{
+		width: 175px;
+		height: 30px;
+    border-radius: 5px;
+    border: 2px solid #e3e4e8;
+    padding-left: 10px;
+    margin-top: 5px;
+    outline: none;
+}
+#form-register{
+  margin-top: 24px;
+  margin-left: 57px;
+}
+.help-block{
+/*  border: 1px solid #fff;*/
+/*  border-radius: 4px;*/
+/*  display: inline-block;*/
+/*  height: 20px;*/
+/*  width: 116px;*/
+/*  line-height: 20px;*/
+	padding: 4px;
+    color: #fff;
+    border-radius: 2px;
+}
+.default {
+  background: #aaa;
+}
+.danger {
+  background: #c00;
+}
+.success {
+  background: #0b0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

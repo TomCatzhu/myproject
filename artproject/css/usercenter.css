@@ -1,0 +1,113 @@
+#main{
+  border: 2px solid #eee;
+  margin-top: 50px;
+  min-height:765px;
+}
+#main .affix {
+  box-sizing: border-box;
+  width: 210px;
+  float: left;
+  padding: 15px;
+
+
+}
+
+.affix h4 {
+  font-size: 1.5em;
+  margin: 10px 0;
+
+}
+
+.affix ul li {
+  padding: 5px 20px;
+}
+
+.affix ul li.active a {
+  color: #e4393c;
+  font-weight: bold;
+}
+
+#main .right {
+  box-sizing: border-box;
+  margin-left: 210px;
+  padding: 15px;
+
+}
+
+#main .right > div {
+  display: none;
+  min-height: 300px;
+}
+
+#main .right > div.active {
+  display: block;
+}
+
+#table-order {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#table-order th,
+#table-order td {
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  text-align: center;
+}
+#table-order th{
+  color:#fff;
+}
+#table-order tr td:first-child {
+  text-align: left;
+}
+#table-order thead tr {
+  background:#F39C11;
+}
+#table-order tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+
+#table-order img {
+  width: 60px;
+}
+
+.pager {
+  list-style: none;
+  margin: 20px 0;
+}
+.pager:after {
+  content: ' ';
+  display: table;
+}
+.pager li {
+  float: left;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  margin-right: 5px;
+}
+.pager li.active {
+  border: none;
+  background: transparent;
+}
+.pager li.active a {
+  color: #e4393c;
+}
+#bt-lottery{
+  display: block;
+  margin: 20px auto;
+  padding: 20px 20px;
+  border: 0;
+  background: #E54346;
+  border-radius: 3px;
+}
+#ot,#st{
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+
+
+

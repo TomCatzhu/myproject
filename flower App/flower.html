@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <link rel="stylesheet" href="css/ionic.css"/>
+  <link rel="stylesheet" href="css/fl.css"/>
+  <script src="js/ionic.bundle.js"></script>
+  <script src="js/fl.js"></script>
+  <title></title>
+</head>
+<body ng-controller="parentCtrl">
+
+<div ui-view>
+
+</div>
+
+<ion-tabs class="tabs-icon-top">
+  <ion-tab icon="ion-home"
+           on-select="jump('start')"
+           title="主页"></ion-tab>
+  <ion-tab icon="ion-person"
+           on-select="jump('myOrder')"
+           title="个人中心"></ion-tab>
+  <ion-tab icon="ion-ios-cart" ng-click="jump('cart')" title="购物车" badge="data.totalNumInCart" badge-style="badge-assertive"></ion-tab>
+  <ion-tab icon="ion-ios-gear"
+           on-select="jump('setting')"
+           title="设置"></ion-tab>
+</ion-tabs>
+
+</body>
+
+</html>

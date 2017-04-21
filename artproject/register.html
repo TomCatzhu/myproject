@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<div>
+  <video class="video-bg" src="res/snow.mp4" autoplay loop muted></video>
+</div>
+<div id="mask">
+  <div class="userlogin">
+    <p>
+      <a href="index.html">
+        返回首页
+      </a>
+    </p>
+
+    <div class="myimg">
+      <img src="images/logo.png" alt=""/>
+    </div>
+    <!--登录信息-->
+    <div class="box">
+      <div>
+				<p>注册  |<span>已有账号登录</span></p>
+			</div>
+      <form id="form-register">
+        <div class="form-group">
+          <label for="uname" class="control-label">用户名：</label>
+          <input type="text" class="form-control" autofocus
+                 autocomplete="off" required minlength="3" maxlength="6"
+                 id="uname" name="uname" placeholder="请输入用户名"/>
+          <span class="help-block default">用户名长度在3~6位之间</span>
+        </div>
+        <div class="form-group">
+          <label for="upwd" class="control-label">密码名：</label>
+          <input type="text" class="form-control"  autocomplete="off" required minlength="6" maxlength="8"
+                 id="upwd" name="upwd" placeholder="请输入密码"/>
+          <span class="help-block default">用户名长度在6~8位之间</span>
+        </div>
+        <div class="form-group">
+          <label class="control-label"></label>
+          <input  type="submit" value="提交注册信息" id="bt-submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
+
+

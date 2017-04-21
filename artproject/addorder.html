@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> 京东商城－购物车 </title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="css/comment.css">
+  <link rel="stylesheet" href="css/addorder.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+<div id="main">
+  <div class="add-order">
+    <header class="checkout-tit">
+      <span class="tit-txt">填写并核对订单信息</span>
+    </header>
+    <section class="checkout-steps">
+      <div class="step-tit">
+        <h3>收货人信息</h3>
+
+        <!--用于收集用户的所有输入-->
+        <form id="form-addorder"></form>
+
+        <div class="extra-r">
+          <a href="#none" class="ftx-05">新增收货地址</a>
+        </div>
+      </div>
+      <div class="step-cont">
+        <div class="addr-detail">
+          <span class="addr-name" limit="6" title="笑笑">笑笑</span>
+          <input type="hidden" form="form-addorder" name="rcvName" value="笑笑"/>
+          <span class="addr-info" limit="45" title="北京 海淀区 三环到四环之间 太阳园小区4号楼101室">北京 海淀区 三环到四环之间 太阳园小区4号楼101室</span>
+          <input type="hidden" form="form-addorder" name="rcvAddr" value="北京 海淀区 三环到四环之间 太阳园小区4号楼101室"/>
+          <span class="addr-tel">136****1379</span>
+          <input type="hidden" form="form-addorder" name="rcvPhone" value="136****1379"/>
+        </div>
+      </div>
+      <div class="hr"></div>
+
+      <div class="step-tit">
+        <h3>支付方式</h3>
+      </div>
+      <div class="step-cont">
+        <ul class="payment-list">
+          <li class="payment-item-selected" data-value="1"><b></b>货到付款</li>
+          <li data-value="2"><b></b>支付宝支付</li>
+          <li data-value="3"><b></b>网银支付</li>
+          <li data-value="4"><b></b>在线支付</li>
+          <input type="hidden" form="form-addorder" name="payment" value="1">
+        </ul>
+      </div>
+      <div class="hr"></div>
+
+      <div class="step-tit">
+        <h3>送货清单</h3>
+      </div>
+      <div class="step-cont">
+        <section class="shopping-list">
+          <aside>
+            <div class="mode-item-tit">
+              <h4>配送方式</h4>
+            </div>
+            <div class="mode-tab-nav">
+              <span class="m-txt">快递<i class="qmark-icon qmark-tip"></i></span><b></b>
+            </div>
+            <div class="mode-list">
+              <span class="mode-label ftx-03">标&nbsp;&nbsp;准&nbsp;&nbsp;达：</span>
+              <br/>
+
+              <div class="mode-infor">预计&nbsp;9月9日[周五]&nbsp;09:00-15:00&nbsp;送达</div>
+            </div>
+          </aside>
+          <div class="goods-list">
+            <div class="goods-tit">
+              <h4 class="vendor_name_h" id="0">商家：美术网自营</h4>
+            </div>
+            <div class="goods-items">
+              <div class="goods-item">
+                <!--<div class="p-img">-->
+                  <!--<a target="_blank" href=""><img src="images/phone/phone_01.jpg" alt=""></a>-->
+                <!--</div>-->
+                <!--<div class="p-name">-->
+                  <!--<a href="" target="_blank">-->
+                    <!--小米 Note 全网通 白色 移动联通电信4G手机 双卡双待-->
+                  <!--</a>-->
+                <!--</div>-->
+                <!--<div class="p-price">-->
+                  <!--<strong class="jd-price">￥1199.00</strong>-->
+                  <!--<span class="p-num">x1</span>-->
+                  <!--<span class="p-state">有货</span>-->
+                <!--</div>-->
+              </div>
+              <!--<div class="goods-item">-->
+                <!--<div class="p-img">-->
+                  <!--<a target="_blank" href=""><img src="images/phone/phone_02.jpg" alt=""></a>-->
+                <!--</div>-->
+                <!--<div class="p-name">-->
+                  <!--<a href="" target="_blank">-->
+                    <!--Apple iPhone 6s (A1700) 16G 玫瑰金色-->
+                  <!--</a>-->
+                <!--</div>-->
+                <!--<div class="p-price">-->
+                  <!--<strong class="jd-price">￥3999.00</strong>-->
+                  <!--<span class="p-num">x1</span>-->
+                  <!--<span class="p-state">有货</span>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="goods-item">-->
+                <!--<div class="p-img">-->
+                  <!--<a target="_blank" href=""><img src="images/phone/phone_03.jpg" alt=""></a>-->
+                <!--</div>-->
+                <!--<div class="p-name">-->
+                  <!--<a href="" target="_blank">-->
+                    <!--PPO R9 4GB+64GB内存版 玫瑰金-->
+                  <!--</a>-->
+                <!--</div>-->
+                <!--<div class="p-price">-->
+                  <!--<strong class="jd-price">￥2499.00</strong>-->
+                  <!--<span class="p-num">x1</span>-->
+                  <!--<span class="p-state">有货</span>-->
+                <!--</div>-->
+              <!--</div>-->
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="hr"></div>
+
+      <div class="step-tit">
+        <h3>发票信息</h3>
+      </div>
+      <div class="step-content">
+        <div id="part-inv" class="invoice-cont">
+          <span class="mr10"> 普通发票（电子） &nbsp; </span>
+          <span class="mr10"> 个人&nbsp; </span>
+          <span class="mr10"> 明细&nbsp; </span>
+        </div>
+      </div>
+    </section>
+    <div class="order-summary">
+      <div class="statistic fr">
+        <div class="list">
+          <span><em class="ftx-01">3</em> 件商品，总商品金额：</span>
+          <em class="price" id="warePriceId" v="264">￥264.00</em>
+        </div>
+        <div class="list">
+          <span>运费：</span>
+          <em class="price"><i class="freight-icon"></i> ￥0.00</em>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="trade-foot">
+      <div class="trade-foot-detail-com">
+        <div class="fc-price-info">
+          <span class="price-tit">应付总额：</span>
+          <span class="price-num">￥999999.99</span>
+          <input type="hidden" form="form-addorder" name="price" value="9999999.99"/>
+        </div>
+        <div class="fc-consignee-info">
+        </div>
+      </div>
+
+      <div id="checkout-floatbar" class="group">
+        <div class="checkout-buttons">
+          <button type="button" class="checkout-submit">
+            提交订单<b></b>
+          </button>
+        </div>
+        <span id="submit_message" style="display:none" class="submit-error"></span>
+
+        <div class="submit-check-info" id="submit_check_info_message" style="display:none"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div id="footer"></div>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/addorder.js"></script>
+
+</body>
+</html>
